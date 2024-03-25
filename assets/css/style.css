@@ -17,6 +17,7 @@ h1, h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525
+}
 
 #logo {
     float: left;
@@ -39,7 +40,7 @@ h1, h2 {
 }
 #menu a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 #menu a:hover{
     border-bottom: 1px solid #3a3a3a;
@@ -57,8 +58,20 @@ h1, h2 {
     height: 600px;
     width: 100%;
     background: url('../images/hero-images.jpeg') no-repeat center center;
+
+/* animates zoom effect on loading page */
+ animation-name: hero-zoom;
+ animation-duration: 5s;
+ animation-fill-mode: forwards;
 }
+
 /* Creates the level of zoom for hero image*/
 @keyframes hero-zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 
 }
