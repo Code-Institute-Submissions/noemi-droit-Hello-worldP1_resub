@@ -16,8 +16,7 @@ h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
-}
+    color: #252525
 
 #logo {
     float: left;
@@ -40,11 +39,26 @@ h1, h2 {
 }
 #menu a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 #menu a:hover{
     border-bottom: 1px solid #3a3a3a;
 }
 .active{
     border-bottom: 1px solid #3a3a3a;
+}
+/* hero image */
+#hero-outer{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-images.jpeg') no-repeat center center;
+}
+/* Creates the level of zoom for hero image*/
+@keyframes hero-zoom{
+
 }
